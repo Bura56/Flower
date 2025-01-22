@@ -5,7 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" type="text/javascript"></script><title>Flowers</title>
+    <script src="main.js" type="text/javascript"></script>
+    <title>Flowers</title>
+    <style>
+        @font-face {
+            font-family: 'Great Vibes';
+            src: url('path/to/great-vibes-font.woff2') format('woff2');
+        }
+        .anniversary-text {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3em; /* Increased font size */
+            text-align: center; /* Center text horizontally */
+            position: absolute; /* Position it absolutely */
+            bottom: 20px; /* Position it at the bottom */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Adjust for perfect horizontal centering */
+            color: lightblue; /* Change color to light blue like the flowers */
+            animation: fadeIn 3s ease-in-out; /* Add animation */
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
 </head>
     
 <body class="not-loaded">
@@ -306,5 +328,6 @@
         </div>
       </div>
     </div>
+    <div class="anniversary-text">Five Months Together, and Forever to Go – You Are My Blossom Deeye</div>
 </body>
 </html>
